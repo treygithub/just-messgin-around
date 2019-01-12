@@ -13,3 +13,21 @@ checkObj=(check)=>{
 }
 
 console.log(checkObj('name'))
+
+
+var myArray = [];
+
+//odd
+for(i=1;i<10;i+=2){
+    myArray.push(i)
+}
+
+console.log(myArray)
+
+var myArray2 = []
+
+//even
+for(i=2;i<10;i+=2){
+    myArray2.push(i)
+}
+console.log(myArray2)
