@@ -1,5 +1,12 @@
 var todoArray = [];
-var input = prompt("what would you like to do?");
+var input='';
+
+window.addEventListener('load', 
+  function() { 
+    input = prompt("what would you like to do?");
+    return input;
+  }, false);
+
 while(input != 'quit' ){
     if(input === 'add'){
         let newtodo = prompt("Enter Name of new todo");
