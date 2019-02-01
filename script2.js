@@ -1,11 +1,11 @@
 var todoArray = [];
-var input='';
+var input;
 
 window.addEventListener('load', 
   function() { 
     input = prompt("what would you like to do?");
-    return input;
   }, false);
+
 
 while(input != 'quit' ){
     if(input === 'add'){
