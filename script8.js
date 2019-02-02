@@ -1,7 +1,7 @@
 //loop backwords
 
 const names = ["hello","world"]
-
-for(let i = names.length -1; i >= 0 ;i--){
+const length = names.length -1;
+for(let i = length; i >= 0 ;i--){
     console.log('names[i] looping backwards', names[i])
 }
