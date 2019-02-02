@@ -36,5 +36,7 @@ switch (true){
         console.log(`John is the winner with avg score of ${johnAvg}` );
         break
     case mikeAvg === johnAvg :
-    console.log(` We have a tie mike avg was ${mikeAvg} & john avg was ${johnAvg}` )
+        console.log(` We have a tie mike avg was ${mikeAvg} & john avg was ${johnAvg}` )
+    default:
+        console.log('error')
 }
