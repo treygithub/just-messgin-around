@@ -35,17 +35,21 @@ let selected =  allQuestions[randomNumber]
 console.log('selected', selected.correct)
 selected.displayQ();
 
-theAnswer = () => {
+
+
+init = () => {
     var thePrompt = prompt("please enter 0 for yes or 1 for no")
     thePrompt = parseInt(thePrompt)
-    console.log('thePrompt', typeof(thePrompt))
-    if(selected.correct === thePrompt){
+    if(thePrompt > 1 ){
+        alert('Please enter a valid answer 0 for yes or 1 for no. Lets try this again')
+        this.init();
+    }else if(selected.correct === thePrompt){
         console.log("YOU GOT THE CORRECT ANSWER!", selected.correct)
     }else{
         console.log('you suck at this game!')
     }
-}
+};
 
-(function (){
-    theAnswer();
-})();
+(function(){
+    init();
+})()
