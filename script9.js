@@ -54,4 +54,3 @@ let robert = Object.create(personProto, {
 
 
 console.log('robert', robert)
-
