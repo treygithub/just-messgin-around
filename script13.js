@@ -78,7 +78,7 @@ nextWrongAnswer=()=>{
     init();
     }else{
         thePrompt = prompt('would you like to play again ? type yes or no ...')
-        thePrompt =  thePrompt.toLowerCase()
+        thePrompt =  thePrompt.trim().toLowerCase()
         if(thePrompt === 'yes'){
             allQuestions = [q1,q2,q3]
             init();
