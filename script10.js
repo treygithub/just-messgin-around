@@ -42,13 +42,14 @@ init = () => {
     thePrompt = parseInt(thePrompt)
     if(thePrompt > 1 ){
         alert('Please enter a valid answer 0 for yes or 1 for no. Lets try this again')
-        this.init();
+        init();
     }else if(selected.correct === thePrompt){
         console.log("YOU GOT THE CORRECT ANSWER!", selected.correct)
     }else{
         console.log('you suck at this game!')
     }
 };
+
 
 (function(){
     init();
