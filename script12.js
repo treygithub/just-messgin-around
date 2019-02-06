@@ -30,7 +30,7 @@ robert.presentation.call(emily,'friendly','afternoon');
 //APPLY  uses array
 //robert.presentation.apply(emily,['friendly','morning'])
 
-//BIND doesn't invoke function
+//BIND doesn't invoke function store in var let const AKA currying 
 var robertFriendly = robert.presentation.bind(robert,"friendly");
 
 //console.log('robertFriendly', robertFriendly);
