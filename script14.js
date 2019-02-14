@@ -16,7 +16,7 @@ console.log(buget.test(5))
 
 
 // Var x and function add are both private!!!
-// but by returning an object we can then use dot notation to acces the closer and its values
+// but by returning an object we can then use dot notation to access inside the closer "functional scope" and its values
 
 var job = (()=>{
     let x = 'Melissa Guerra'
@@ -30,4 +30,4 @@ var job = (()=>{
     }
 })()
 
-console.log(job.hired('awesome'))
+console.log(job.hired('awesome'));
